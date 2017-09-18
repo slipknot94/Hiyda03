@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sh_polak.hiyda.PartiesList"
+    android:background="@drawable/login_background3">
+    <EditText
+        android:id="@+id/partyName"
+        android:hint="party name"
+        style="@style/partyStyle" />
+    <EditText
+        android:id="@+id/location"
+        android:hint="location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partyName"/>
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="galerry"
+        android:onClick="getImage"
+        android:layout_below="@id/location"/>
+    <ImageView
+        android:id="@+id/partyImage"
+        android:layout_below="@+id/btnGallery"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uploadFileAData"
+        android:layout_alignParentBottom="true"/>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGallery"
+        mtf_labelColor="#666"
+        mtf_image="@drawable/ic_mail_grey600_24dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Party name"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+</RelativeLayout>

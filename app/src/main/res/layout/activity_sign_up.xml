@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background3"
+    tools:context="com.example.sh_polak.hiyda.SignInActivity">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Sign up"
+        android:textColor="#ffffff" />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Username"
+        style="@style/SignUpTextStyle"/>
+    <EditText
+        android:id="@+id/eMail"
+        android:layout_below="@id/userName"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        style="@style/SignUpTextStyle"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@id/eMail"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        style="@style/SignUpTextStyle"/>
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        style="@style/SignUpTextStyle"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/enterBtn"
+        android:layout_below="@id/confirmPassword"
+        android:onClick="registerUser"
+        android:text="Sign up"
+        android:foreground="@drawable/ripple"
+        android:background="@drawable/sign_up_button"
+        android:textColor="#ffffff"
+        style="@style/LoginButtonStyle"/>
+
+</RelativeLayout>

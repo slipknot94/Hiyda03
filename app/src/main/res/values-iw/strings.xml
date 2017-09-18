@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hiyda</string>
+    <string name="register">\"&#9759; לא נרשמת ?להרשמה לחץ כאן \"</string>
+    <string name="keyId" translatable="false"></string>
+</resources>

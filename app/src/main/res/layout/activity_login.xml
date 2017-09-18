@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_background3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sh_polak.hiyda.LoginActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="55sp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="party"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ff00ff" />
+    <EditText
+        style="@style/LoginTextStyle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/loginName"
+        android:hint="Username"
+        android:textAlignment="viewStart"
+
+        />
+    <ImageView
+        android:id="@+id/usernameDrawable"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/username"
+        android:tint="#ffffff"
+        android:layout_marginTop="133dp"
+        android:layout_marginStart="65dp"
+        />
+    <ImageView
+        android:id="@+id/passwordDrawable"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/password"
+        android:tint="#ffffff"
+        android:layout_marginTop="193dp"
+        android:layout_marginStart="65dp"
+        />
+    <ImageView
+        android:id="@+id/emailDrawable"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/email"
+        android:tint="#ffffff"
+        android:layout_marginTop="253dp"
+        android:layout_marginStart="65dp"
+        />
+
+    <EditText
+        android:id="@+id/loginPass"
+        android:layout_below="@+id/loginName"
+        android:hint="Password"
+        style="@style/LoginTextStyle"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_below="@+id/loginPass"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        style="@style/LoginTextStyle" />
+    <CheckBox
+        android:layout_marginStart="60dp"
+        android:id="@+id/stayIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEmail"
+        android:textColor="#ffffff"
+        android:text="Remember me"
+        android:buttonTint="#ffffff"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/stayIn"
+        android:text="login"
+        android:onClick="Login"
+        android:clickable="true"
+        android:foreground="@drawable/ripple"
+        style="@style/LoginButtonStyle"
+        android:background="@drawable/login_button"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Not a member yet? Sign up now."
+        android:layout_below="@+id/loginButton"
+        android:textColor="#ffffff"
+        android:background="@drawable/notamember"
+        android:onClick="registerActivty"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sh_polak.hiyda.PublicitActivity">
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/RegisterParty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Register Party"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:onClick="chooseFrag"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/OverallInfo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_background001"
+            android:layout_height="match_parent"
+            android:text="overall"
+            android:onClick="chooseFrag"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/section"
+        android:layout_below="@+id/lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/partyRegisterLyt"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background3">
+    <EditText
+        android:id="@+id/partyName"
+        android:hint="party name"
+        style="@style/LoginTextStyle"/>
+    <EditText
+        android:id="@+id/location"
+        android:hint="location"
+        android:layout_below="@+id/partyName"
+        style="@style/LoginTextStyle"/>
+    <Button
+        android:id="@+id/btnGallery"
+        android:text="galerry"
+        android:onClick="getImage"
+        style="@style/LoginButtonStyle"
+        android:layout_below="@id/location"/>
+    <ImageView
+        android:id="@+id/partyImage"
+        android:layout_below="@+id/btnGallery"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:text="submit"
+        style="@style/LoginButtonStyle"
+        android:onClick="uploadFileAData"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
